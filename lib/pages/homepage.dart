@@ -29,7 +29,12 @@ class _HomepageState extends State<Homepage> {
         mainAxisAlignment: MainAxisAlignment.center,
 
         children: [
-          Center(child: Text('Theme Changer')),
+          Center(
+            child: Text(
+              'Theme Changer',
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
+            ),
+          ),
 
           Obx(
             () => Switch(
